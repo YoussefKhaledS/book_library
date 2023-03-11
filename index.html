@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/task.css">
+
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Inter:wght@200;400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&family=Qwitcher+Grypen&family=Work+Sans:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container addBook">
+        <form action="">
+            <input type="text" name="name" id="name" placeholder="Book name" required>
+            <input type="text" name="brief" id="brief" placeholder="Book Brief">
+            <div class="stars" style="margin: 10px 0px;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; margin: 10px 0px ;width: 75%;">
+                <label for="readed" style="font-weight: bold; font-size: 19px; cursor: pointer; margin-right: 15px;">Did you finish this book?</label>
+                <input type="checkbox" name="readed" id="readed" style="width: 20px; height: 20px; cursor: pointer;">
+            </div>
+            
+            <input type="file" name="image" id="image" accept="image/png, image/jpg, image/gif, image/jpeg" >
+            <label for="image"><i class="fa-solid fa-cloud-arrow-up" style="margin-right: 5px;font-size: 20px;"></i>Put your book image</label>
+
+            <input type="submit" value="Add Book!" style="margin: 10px 0px;">
+            <input type="reset" value="Reaset" style="margin: -15px 0px;">
+        </form>
+        <div><img src="imgs/books.jpg" alt="book library" style="width: 270px;"></div>
+    </div>
+
+    <div class="books container">
+        
+    </div>
+
+
+    <script type="text/javascript" src="task.js"></script>
+</body>
+
+</html>
